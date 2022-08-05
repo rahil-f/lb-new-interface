@@ -139,11 +139,7 @@ class FilterableProductTable  extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-<<<<<<< HEAD
             search: '',
-=======
-            Search: '',
->>>>>>> 3448450620655e21337cfa7af8c3ceab839d6691
             inStock: false
         }
         this.handleSearchChange = this.handleSearchChange.bind(this)
@@ -160,15 +156,9 @@ class FilterableProductTable  extends React.Component {
 
     render() {
         return <div className="container text-center">
-<<<<<<< HEAD
             <SearchBar search={this.state.search} onSearchChange={this.handleSearchChange}/>
             <InStock inStock={this.state.inStock} onStockChange={this.handleStockChange}/>
             <ProductTable checked={this.state.inStock} searchWord={this.state.search}/>
-=======
-            <SearchBar Search={this.state.Search} onSearchChange={this.handleSearchChange}/>
-            <InStock inStock={this.state.inStock} onStockChange={this.handleStockChange}/>
-            <ProductTable checked={this.state.inStock} searchWord={this.state.Search}/>
->>>>>>> 3448450620655e21337cfa7af8c3ceab839d6691
         </div>;
     }
 }
